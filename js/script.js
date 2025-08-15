@@ -1,6 +1,6 @@
 function openModal(){
   const overlayElement = document.getElementById('overlay');
-  overlayElement.style.display = 'flex';
+  overlayElement.style.display = "flex";
 }
 
 function closeModal() {
