@@ -1,18 +1,62 @@
-body{
+body {
     background-color: black;
     margin: 0;
     padding: 0;
 }
 
 .navbar {
-            border-bottom: 1px solid rgb(212, 212, 216);
-            background-color: white;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 15px;
-            padding-top: 10px;
-            justify-content: space-between;
-        }
+    border-bottom: 1px solid rgb(212, 212, 216);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image {
+    height: 380px;
+    margin: 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.heading {
+    color: white;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+.iitm-logo-image {
+    height: 75px;
+    padding-left: 40px;
+}
+
+.btn {
+    background-color: rgba(244, 83, 37, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+
+
