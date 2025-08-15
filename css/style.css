@@ -48,7 +48,7 @@ body {
     padding-left: 40px;
 }
 
-.btn {
+.download-btn {
     background-color: rgba(244, 83, 37, 1);
     color: white;
     border: none;
@@ -58,5 +58,79 @@ body {
     font-size: 16px;
 }
 
+.download-btn:hover{
+    background-color: rgb(232, 60, 13);
+}
+
+.form {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    background: white;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.register-header img {
+    max-height: 40px;
+}
+
+.register-header h2 {
+    margin: 10px 0 0;
+    font-size: 20px;
+}
+
+form {
+    padding: 20px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.checkbox-container a {
+    color: #0ea5e9;
+    text-decoration: none;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #0ea5e9;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #0284c7;
+}
 
 
