@@ -19,7 +19,7 @@
             <p class="text">In Association with</p>
             <img src="./images/iitm-logo.png" class="iitm-logo-image" />
             <p class="text">Certificate from prestigious IITM Pravartak</p>
-            <button class="download-btn">Download Curriculum</button>
+            <button class="download-btn" onclick="openModal()">Download Curriculum</button>
         </div>
 
         <div class="main-image">
@@ -27,33 +27,47 @@
         </div>
     </div>
 
-    <div class="form">
-        <div class="register-container">
-        <div class="register-header">
-            <img src="./images/excelR-logo.png" alt="ExcelR Logo">
-            <h2>Register now</h2>
-        </div>
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="E-mail">
-            <input type="tel" placeholder="Mobile Number">
-            <select>
-                <option value="">Looking for?</option>
-                <option>Data Science</option>
-                <option>AI & ML</option>
-                <option>Full Stack Development</option>
-            </select>
-            <div class="checkbox-container">
-                <input type="checkbox" checked>
-                <label>I hereby accepting agree the <a href="#">terms and conditions</a> and <a href="#">privacy
-                        policy</a> of ExcelR Solutions</label>
+    <div class="overlay" id="overlay">
+        <div class="form">
+            <div class="register-container">
+
+                <img src="./images/close.png" class="close-icon" alt="Close" onclick="closeModal()" />
+
+                <div class="register-header">
+                    <img src="./images/excelR-logo.png" alt="ExcelR Logo">
+                    <h2>Register now</h2>
+                </div>
+
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="E-mail">
+                    <input type="tel" placeholder="Mobile Number">
+                    <select>
+                        <option value="">Looking for?</option>
+                        <option>Data Science</option>
+                        <option>AI & ML</option>
+                        <option>Full Stack Development</option>
+                    </select>
+                    <div class="checkbox-container">
+                        <input type="checkbox" checked>
+                        <label>I hereby accepting and agree the terms and conditions and privacy
+                                policy of ExcelR Solutions</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
             </div>
-            <button type="submit" class="submit-btn">Register</button>
-        </form>
-    </div>
+        </div>
     </div>
 
-    <script src="./js/script.js"></script>
+    <script>
+        function openModal() {
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
